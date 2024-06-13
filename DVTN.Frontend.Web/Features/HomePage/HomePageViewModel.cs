@@ -10,4 +10,7 @@ public class HomePageViewModel
     public string Textpanel { get; set; } = string.Empty;
     public string LargeTextPanel { get; set; } = string.Empty;
 
+    //Added new variable for DI demo
+    public string TextPanelForServiceMessage { get; set; } = string.Empty;
+
 }

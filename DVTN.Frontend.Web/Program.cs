@@ -1,5 +1,6 @@
 using System.Reflection;
 using Microsoft.AspNetCore.Mvc.Razor;
+using DVTN.Frontend.Web.Features.HomePage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,9 @@ builder.Services.Configure<RazorViewEngineOptions>(o =>
     o.ViewLocationFormats.Add("/Features/Shared/{0}" + RazorViewEngine.ViewExtension);
     o.ViewLocationFormats.Add("/Components/ViewComponents/{0}" + RazorViewEngine.ViewExtension);
 });
+
+//Register the services with the DI container
+builder.Services.AddTransient<INewService, NewService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
