@@ -26,6 +26,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+//Configure Status Code Re-Direct error Pages for Dev env
+app.UseStatusCodePagesWithRedirects("/ErrorPage/{0}");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

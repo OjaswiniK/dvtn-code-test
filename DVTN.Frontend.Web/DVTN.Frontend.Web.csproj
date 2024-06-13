@@ -18,4 +18,8 @@
     <_ContentIncludedByDefault Remove="Features\AboutUsPage\Index.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\ErrorPage\" />
+  </ItemGroup>
+
 </Project>
