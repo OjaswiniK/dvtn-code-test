@@ -1,0 +1,22 @@
+@model DVTN.Frontend.Web.Components.ViewComponents.PageFooter.PageFooterViewModel
+
+<!--/// Component: SiteFooter ///-->
+<div id="site-footer">
+
+    <div class="acknowledgement text-pretty bg-abergeldie-green py-10 text-center text-white">
+        <div class="container max-w-screen-lg">
+            <p>
+                @Model.AcknowledgementCopy
+            </p>
+        </div>
+    </div>
+
+    <div class="copyright bg-white py-7 text-center text-sm">
+        <div class="container">
+            <p>
+                &copy; @Model.CompanyName. <span class="whitespace-nowrap">All rights reserved.</span><br class="md:hidden">
+            </p>
+        </div>
+    </div>
+</div>
+<!--/// END Component: SiteFooter ///-->

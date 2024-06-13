@@ -1,0 +1,1 @@
+class n extends Event{data;constructor({type:t,data:s}){super(t),this.data=s}}class e extends EventTarget{static _instance;static getInstance(){return this._instance||(this._instance=new e),this._instance}emit(t,s){this.dispatchEvent(new n({type:t,data:s}))}}const c=e.getInstance();export{c as E};
