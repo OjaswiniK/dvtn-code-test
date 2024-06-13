@@ -15,6 +15,13 @@ public class HomePageRequestHandler :
 
     public async Task<HomePageViewModel> Handle(HomePageRequest request, CancellationToken cancellationToken)
     {
-        return new HomePageViewModel();
+        //When Home Controller make async call with request class object
+        //Then receive the request and create a Response object as HomePageViewModel class object and return to the view
+        return new HomePageViewModel()
+        {
+            ImageUrl = request.ImageUrl,
+            Textpanel = request.Textpanel,
+            LargeTextPanel = request.LargeTextPanel,           
+        };
     }
 }

@@ -5,5 +5,55 @@
     <vc:page-hero hero-text="We design and deliver the complex infrastructure needed to build better communities" is-full-size="true"/>
     
     @* TODO render components here *@
-    
+    <div class="panel">
+        @*  <img src="~/brand/logo.png" alt="Sample Image" class="img-responsive" />    *@
+        <img src="@Model.ImageUrl" alt="Sample Image" class="img-responsive" />
+    </div>
+    <div class="text-panel">
+        <p>@Model.Textpanel</p>
+    </div>
+    <div class="large-text-panel">
+        <p>@Model.LargeTextPanel</p>
+    </div>   
 </div>
+</div>
+
+<script>
+        .panel {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px 0;
+        text - align: center;
+    }
+
+        .panel img {
+        max - width: 100 %;
+        height: auto;
+    }
+
+        .panel p {
+        font - size: 18px;
+        margin - top: 10px;
+    }
+        .text - panel {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 20px 0;
+        background - color: #f9f9f9;
+    }
+
+        .text - panel p {
+        font - size: 16px;
+    }
+
+        .large - text - panel {
+        padding: 20px;
+        background - color: #f9f9f9;
+        border: 1px solid #ccc;
+        margin - top: 20px;
+        font - size: 1.2em;
+        line - height: 1.6;
+    }
+
+</script>
+    
